@@ -107,18 +107,16 @@
     <!-- Button Tab 5 -->
     <div class="container5 box-shadow" id="todo">
         <h2 class="text-center game-title">Daily TO-DO List</h2>
-        <P class="text-center">Add List of Items in the TO-Do list</P>
+        <P class="text-center">Click on item to complete it, click again to undo</P>
         <div class="space"></div>
         <div class="container todoAdd">
             <div class="form todoform">
                 <input type="text" class="form-control" placeholder="Enter todo item eg. Go to supermarket" id="todoList">
-                <button class="btn btn-secondary-todo" id="addList"><span>+</span></button>
+                <button onclick="newElement()" class="btn btn-secondary-todo" id="addList"><span>+</span></button>
             </div>
             <div class="todo-lists">
                 <ul id="todos">
-                    <li><span>✔Eat Breakfast</span></li>
-                    <li><span>✔Study programming</span></li>
-                    <li><span>✔Play with Ethan on break</span></li>
+                    <li>Go to the gym</li>
                 </ul>
             </div>
         </div>
