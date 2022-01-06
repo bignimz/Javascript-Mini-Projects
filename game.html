@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center">Choose a Game to Play</h2>
+        <div class="space"></div>
+
+        <button class="btn btn-main" id="btn1">Guess My Number</button>
+        <button class="btn btn-primary" id="btn2">ABC Game</button>
+        <button class="btn btn-secondary" id="btn3">BMI Calculator</button>
+        <button class="btn btn-indigo" id="btn4">Tip Calculator</button>
+        <button class="btn btn-red" id="btn5">TO DO APP</button>
+    </div>
+    <!-- Button Tab 1 -->
+    <div class="container2 box-shadow" id="guess">
+        <h2 class="text-center game-title">Guess The Number Game!</h2>
+        <div class="space"></div>
+        <p id="error-msg" class="error-msg"></p>
+        <div class="results-box" id="results-box">
+            <h3 class="text-center" id="results"></h3>
+        </div>
+        <div class="space"></div>
+        <div class="center">
+            <input type="text" id="age" class="form-control" placeholder="Enter number: eg 20">
+            <button class="btn btn-main" id="submit">Submit</button>
+        </div>
+        <div class="space"></div>
+    </div>
+    <!-- Button Tab 2 -->
+    <div class="container3 box-shadow" id="abc">
+        <h2 class="text-center game-title">Pop the ABC Balloons Game!</h2>
+        <div class="space"></div>
+        <!-- <div id="empty"></div> -->
+        <div class="flex-container abc">
+            <div class="balloon" id="a"><h2>A</h2></div>
+            <div class="balloon" id="b"><h2>B</h2></div>
+            <div class="balloon" id="c"><h2>C</h2></div>
+            <div class="balloon" id="d"><h2>D</h2></div>
+            <div class="balloon" id="e"><h2>E</h2></div>
+            <div class="balloon" id="f"><h2>F</h2></div>
+            <div class="balloon" id="g"><h2>G</h2></div>
+            <div class="balloon" id="h"><h2>H</h2></div>
+            <div class="balloon" id="i"><h2>I</h2></div>
+            <div class="balloon" id="j"><h2>J</h2></div>
+            <div class="balloon" id="k"><h2>K</h2></div>
+            <div class="balloon" id="l"><h2>L</h2></div>
+            <div class="balloon" id="m"><h2>M</h2></div>
+            <div class="balloon" id="n"><h2>N</h2></div>
+            <div class="balloon" id="o"><h2>O</h2></div>
+            <div class="balloon" id="p"><h2>P</h2></div>
+            <div class="balloon" id="q"><h2>Q</h2></div>
+            <div class="balloon" id="r"><h2>R</h2></div>
+            <div class="balloon" id="s"><h2>S</h2></div>
+            <div class="balloon" id="t"><h2>T</h2></div>
+            <div class="balloon" id="u"><h2>U</h2></div>
+            <div class="balloon" id="v"><h2>V</h2></div>
+            <div class="balloon" id="w"><h2>W</h2></div>
+            <div class="balloon" id="x"><h2>X</h2></div>
+            <div class="balloon" id="y"><h2>Y</h2></div>
+            <div class="balloon" id="z"><h2>Z</h2></div>
+        </div>
+        
+    </div>
+
+    <!-- Button Tab 3 -->
+    <div class="container4 box-shadow" id="calculator">
+        <h2 class="text-center game-title">BMI Calculator</h2>
+        <div class="space"></div>
+        <div class="container bmi">
+            <div class="form">
+                <input type="number" class="form-control" placeholder="Enter Weight in kg eg. 68" id="weight">
+                <input type="number" class="form-control" placeholder="Enter Height in meters eg. 1.6m" id="height">
+                <button class="btn btn-secondary" id="calcbmi">Calculate BMI</button>
+            </div>
+            <div class="bmi-results">
+                <h2>Your BMI is:</h2>
+                <h3 id="bmiResults"></h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Button Tab 4 -->
+    <div class="container4 box-shadow" id="tipCalc">
+        <h2 class="text-center game-title">Tip Calculator</h2>
+        <P class="text-center">If the Bill entered is between 50 and 300, a 15% Tip will be applied, else a 20% tip is applied.</P>
+        <div class="space"></div>
+        <div class="container bmi">
+            <div class="form">
+                <input type="number" class="form-control" placeholder="Enter Bill amount eg. 200" id="bill">
+                <button class="btn btn-secondary" id="calcTip">Calculate TIP</button>
+            </div>
+            <div class="tip-results">
+                <p>Your Bill is:<span class="bill-res" id="billDisplay">$</span></p>
+                <p>Applied Tip is:<span class="bill-res" id="tipDisplay"> %</span></p>
+                <p>Your Total Bill is:<span class="bill-res" id="totalDisplay">$</span></p> 
+            </div>
+        </div>
+    </div>
+
+    <!-- Button Tab 5 -->
+    <div class="container5 box-shadow" id="todo">
+        <h2 class="text-center game-title">Daily TO-DO List</h2>
+        <P class="text-center">Add List of Items in the TO-Do list</P>
+        <div class="space"></div>
+        <div class="container todoAdd">
+            <div class="form todoform">
+                <input type="text" class="form-control" placeholder="Enter todo item eg. Go to supermarket" id="todoList">
+                <button class="btn btn-secondary-todo" id="addList"><span>+</span></button>
+            </div>
+            <div class="todo-lists">
+                <ul id="todos">
+                    <li><span>✔Eat Breakfast</span></li>
+                    <li><span>✔Study programming</span></li>
+                    <li><span>✔Play with Ethan on break</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="space"></div>
+
+    <script src="game.js"></script>
+</body>
+</html>
